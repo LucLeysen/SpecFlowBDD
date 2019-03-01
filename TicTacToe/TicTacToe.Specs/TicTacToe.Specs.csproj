@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{49B294D4-2A57-4ADD-830A-4F72B9529D28}</ProjectGuid>
+    <ProjectGuid>{B5615A91-B4B9-4DAA-90EA-52D69280FA82}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TicTacToe.Specs</RootNamespace>
