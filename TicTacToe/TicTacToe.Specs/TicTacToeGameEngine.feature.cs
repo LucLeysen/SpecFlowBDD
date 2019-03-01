@@ -131,11 +131,11 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("When O is in all the row then O wins")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("When O is in all the top row then O wins")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TicTacToeGameEngine")]
-        public virtual void WhenOIsInAllTheRowThenOWins()
+        public virtual void WhenOIsInAllTheTopRowThenOWins()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("When O is in all the row then O wins", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("When O is in all the top row then O wins", null, ((string[])(null)));
 #line 18
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -190,11 +190,11 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("When I have a board first cols")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("When I have a board with first colums equal")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TicTacToeGameEngine")]
-        public virtual void WhenIHaveABoardFirstCols()
+        public virtual void WhenIHaveABoardWithFirstColumsEqual()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("When I have a board first cols", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("When I have a board with first colums equal", null, ((string[])(null)));
 #line 34
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -228,11 +228,11 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("When I have a boad last cols")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("When I have a board with last colums equal")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TicTacToeGameEngine")]
-        public virtual void WhenIHaveABoadLastCols()
+        public virtual void WhenIHaveABoardWithLastColumsEqual()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("When I have a boad last cols", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("When I have a board with last colums equal", null, ((string[])(null)));
 #line 44
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -260,6 +260,44 @@ this.ScenarioInitialize(scenarioInfo);
 #line 51
  testRunner.When("I determine the outcome", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 52
+ testRunner.Then("the result is \"X\" is the winner", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("When I have a board with like this")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TicTacToeGameEngine")]
+        public virtual void WhenIHaveABoardWithLikeThis()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("When I have a board with like this", null, ((string[])(null)));
+#line 54
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 55
+ testRunner.Given("I have a tic tac toe board", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                        "col1",
+                        "col2",
+                        "col3"});
+            table4.AddRow(new string[] {
+                        "O",
+                        "",
+                        "X"});
+            table4.AddRow(new string[] {
+                        "",
+                        "X",
+                        "O"});
+            table4.AddRow(new string[] {
+                        "X",
+                        "",
+                        "O"});
+#line 56
+ testRunner.And("the board looks like this", ((string)(null)), table4, "And ");
+#line 61
+ testRunner.When("I determine the outcome", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 62
  testRunner.Then("the result is \"X\" is the winner", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

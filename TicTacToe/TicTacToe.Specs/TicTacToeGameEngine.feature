@@ -15,7 +15,7 @@ Scenario: When X is in all the row then X wins
 	When I determine the outcome
 	Then the result is "X" is the winner
 
-Scenario: When O is in all the row then O wins
+Scenario: When O is in all the top row then O wins
 	Given I have a tic tac toe board
 	And the top row is all "O"
 	When I determine the outcome
@@ -31,7 +31,7 @@ Scenario: When I have a board that looks like this
 	When I determine the outcome
 	Then the result is "X" is the winner
 
-Scenario: When I have a board first cols
+Scenario: When I have a board with first colums equal
 	Given I have a tic tac toe board
 	And the board looks like this
 		| col1 | col2 | col3 |
@@ -41,7 +41,7 @@ Scenario: When I have a board first cols
 	When I determine the outcome
 	Then the result is "O" is the winner
 
-Scenario: When I have a boad last cols
+Scenario: When I have a board with last colums equal
 	Given I have a tic tac toe board
 	And the board looks like this
 		| col1 | col2 | col3 |
@@ -50,3 +50,14 @@ Scenario: When I have a boad last cols
 		| O    |      | X    |
 	When I determine the outcome
 	Then the result is "X" is the winner
+
+	Scenario: When I have a board with like this
+	Given I have a tic tac toe board
+	And the board looks like this
+		| col1 | col2 | col3 |
+		| O    |      | X    |
+		|      | X    | O    |
+		| X    |      | O    |
+	When I determine the outcome
+	Then the result is "X" is the winner
+
