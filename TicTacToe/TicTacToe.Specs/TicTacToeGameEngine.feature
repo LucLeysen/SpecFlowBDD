@@ -51,7 +51,7 @@ Scenario: When I have a board with last colums equal
 	When I determine the outcome
 	Then the result is "X" is the winner
 
-	Scenario: When I have a board with like this
+Scenario: When I have a board with like this
 	Given I have a tic tac toe board
 	And the board looks like this
 		| col1 | col2 | col3 |

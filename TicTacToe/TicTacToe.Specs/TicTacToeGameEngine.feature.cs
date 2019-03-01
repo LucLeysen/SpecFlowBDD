@@ -272,7 +272,7 @@ this.ScenarioInitialize(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("When I have a board with like this", null, ((string[])(null)));
 #line 54
- this.ScenarioInitialize(scenarioInfo);
+this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 55
  testRunner.Given("I have a tic tac toe board", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
