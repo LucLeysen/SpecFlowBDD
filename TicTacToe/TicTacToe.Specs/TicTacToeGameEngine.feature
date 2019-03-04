@@ -60,4 +60,3 @@ Scenario: When I have a board with like this
 		| X    |      | O    |
 	When I determine the outcome
 	Then the result is "X" is the winner
-
